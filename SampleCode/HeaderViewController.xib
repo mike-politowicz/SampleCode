@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderViewController" customModule="ScratchTrack" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLeft" destination="gkL-WT-TQ4" id="vff-G3-gtr"/>
+                <outlet property="btnRight" destination="9Pk-lL-Bwt" id="X3F-ZZ-see"/>
+                <outlet property="lblTitle" destination="hlz-ao-2Cu" id="Tqw-9z-C7u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlz-ao-2Cu">
+                    <rect key="frame" x="82" y="32" width="436" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="MWO-tC-jvD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkL-WT-TQ4" userLabel="btnLeft">
+                    <rect key="frame" x="4" y="22" width="70" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="THt-Vj-6Eg"/>
+                        <constraint firstAttribute="height" constant="44" id="mBz-Aa-JjS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLeftPressed:" destination="-1" eventType="touchUpInside" id="Esi-Yl-diE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pk-lL-Bwt" userLabel="btnRight">
+                    <rect key="frame" x="526" y="22" width="70" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="A0L-R5-lUt"/>
+                        <constraint firstAttribute="height" constant="44" id="vS5-hg-gUW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnRightPressed:" destination="-1" eventType="touchUpInside" id="Ctj-to-QeG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.42745098039215684" green="0.52941176470588236" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Pk-lL-Bwt" secondAttribute="bottom" constant="4" id="095-55-tK8"/>
+                <constraint firstItem="gkL-WT-TQ4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="EdQ-X4-GFd"/>
+                <constraint firstItem="gkL-WT-TQ4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="Gnz-Ee-68D"/>
+                <constraint firstAttribute="trailing" secondItem="9Pk-lL-Bwt" secondAttribute="trailing" constant="4" id="N9H-fQ-mbF"/>
+                <constraint firstAttribute="centerX" secondItem="hlz-ao-2Cu" secondAttribute="centerX" id="Whr-kG-kMi"/>
+                <constraint firstItem="9Pk-lL-Bwt" firstAttribute="leading" secondItem="hlz-ao-2Cu" secondAttribute="trailing" constant="8" id="cad-UB-lbX"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gkL-WT-TQ4" secondAttribute="bottom" constant="4" id="eCg-FV-Xbj"/>
+                <constraint firstItem="hlz-ao-2Cu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="oVr-hw-ppb"/>
+                <constraint firstItem="9Pk-lL-Bwt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="p9w-Xs-CBR"/>
+                <constraint firstItem="hlz-ao-2Cu" firstAttribute="leading" secondItem="gkL-WT-TQ4" secondAttribute="trailing" constant="8" id="q0z-Dj-rtD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
