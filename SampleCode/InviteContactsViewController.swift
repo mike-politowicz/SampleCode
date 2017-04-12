@@ -31,8 +31,10 @@ class InviteContactsViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if let viewControllers = navigationController?.viewControllers, shouldRemovePresentingViewController {
+        if let viewControllers = navigationController?.viewControllers,
+                (viewControllers.count > 1) && shouldRemovePresentingViewController {
             navigationController?.viewControllers.remove(at: viewControllers.count - 2)
+            shouldRemovePresentingViewController = false
         }
     }
     
